@@ -1,25 +1,18 @@
-
-
 const aggiungiAllaTuaLista = document.getElementById("aggiungiAllaTuaLista");
 
-
-
-aggiungiAllaTuaLista.onsubmit = function(e) {
-    aggiungiAllaTuaLista.addEventListener("submit",function (e){
-        
-    })
-}
-
-
-
-
-
-const btrAggiungi = document.getElementById("btrAdd");
-
-const creoUnaFunzioneBtrAggiungi = function () {
-  console.log(btrAggiungi);
+const bottone = document.getElementById("btnAdd");
+bottone.onclick = function () {
+  if (aggiungiAllaTuaLista.value !== "") {
+    console.log(aggiungiAllaTuaLista.value);
+    const lista = document.getElementById("lista");
+    console.log(lista);
+    const li = document.createElement("li");
+    li.onclick = function (e) {
+      e.target.remove();
+    };
+    li.innerText = aggiungiAllaTuaLista.value;
+    console.log(li);
+    lista.appendChild(li);
+    aggiungiAllaTuaLista.value = "";
+  }
 };
-btrAggiungi.onclick = ;
-
-
-
