@@ -1,0 +1,28 @@
+body {
+  margin-inline: 10%;
+  margin-top: 10%;
+  background-color: white;
+}
+#aggiungiAllaTuaLista {
+  border: none;
+  padding: 1rem;
+  border-radius: 0 45%;
+}
+
+#btnAdd {
+  border: none;
+  border-radius: 100%;
+  padding: 1rem;
+  color: purple;
+  background-color: rgb(206, 178, 187);
+}
+.sfondo-lista {
+  background-color: lightcoral;
+  width: max-content;
+  padding: 3rem;
+  border-radius: 20%;
+}
+
+#lista {
+  color: purple;
+}
