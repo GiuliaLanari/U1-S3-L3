@@ -20,7 +20,7 @@ bottone.onclick = function () {
 
     li.innerText = inputAggiungiAllaTuaLista.value; //SCRIVO li CON innerText CON IL VALORE INSERITO NEL MIO input
 
-    //CREAZINE DEL BOTTONE PERò è undefined..!!
+    //CREAZINE DEL BOTTONE
 
     const bottoneLista = document.createElement("button");
     bottoneLista.classList.add("bottone-lista");
@@ -33,7 +33,7 @@ bottone.onclick = function () {
 
     //.....!!
 
-    bottoneLista.innerHTML = console.log(li); // VEDO COSA VI è NEL li
+    console.log(li); // VEDO COSA VI è NEL li
     lista.appendChild(li); // CON appendChild AGGIUNGO I MIEI li creati sopra  NELLA MIA LISTA
     inputAggiungiAllaTuaLista.value = ""; // QUESTO SERVIVA PER DARE AL MIO input UN value CHE SI CANCELLA DOPO CHE IL MIO ELEMENTO VIENE CREATO NELLA LISTA
   }
